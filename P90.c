@@ -17,13 +17,12 @@ void main(){
             if(a[j]<a[MIN_INDEX]){
                 MIN_INDEX=j;
             }
-
-            if(MIN_INDEX!=i){
+        }
+         if(MIN_INDEX!=i){
                 int temp=a[i];
                 a[i]=a[MIN_INDEX];
                 a[MIN_INDEX]=temp;
                 
-            }
         }
     }
      printf("Sorted array using selection sort...\n");
@@ -31,4 +30,5 @@ void main(){
         printf("%d , ",a[i]);
     }
 }
+
 
